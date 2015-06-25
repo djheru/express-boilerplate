@@ -1,0 +1,37 @@
+<!-- views/signup.ejs -->
+<!doctype html>
+<html>
+
+<!-- head -->
+<% include include/head %>
+
+<body>
+
+<!-- navbar header -->
+<% include include/nav %>
+
+<div class="container">
+
+    <div class="col-sm-6 col-sm-offset-3">
+
+        <h1><span class="fa fa-exclamation-triangle"></span> Application Error</h1>
+
+        <!-- flash messages -->
+        <% include include/flash %>
+
+        <pre><%= error %></pre>
+        <hr>
+
+        <p>Already have an account? <a href="/login">Login</a></p>
+
+        <p>Or go <a href="/">home</a>.</p>
+
+    </div>
+
+</div>
+
+<!-- javascript -->
+<% include include/scripts %>
+
+</body>
+</html>

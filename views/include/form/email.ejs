@@ -1,0 +1,6 @@
+<div class="form-group<%= (locals.formErrors('email')) ? ' has-error' : ''%>">
+    <label for="email" class="control-label">Email</label>
+    <input type="text" class="form-control" id="email" name="email" value="<%= locals.formBody('email')%>"
+           title="Please enter your email" placeholder="example@email.com">
+    <span class="help-block"></span>
+</div>

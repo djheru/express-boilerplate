@@ -1,0 +1,10 @@
+.DS_Store
+../../.vagrant
+.idea
+node_modules
+npm-debug.log
+!config/secure
+config/secure/*.js
+!config/secure/test.js
+err*.log
+out*.log

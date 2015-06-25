@@ -1,0 +1,44 @@
+<!-- views/profile.ejs -->
+<!doctype html>
+<html>
+
+<!-- head -->
+<% include include/head %>
+
+<body>
+
+<!-- navbar header -->
+<% include include/nav %>
+
+<div id="profile-overlay" class="modal-dialog">
+
+    <div class="modal-content">
+
+        <div class="modal-header">
+            <a href="/" class="close">
+                <span class="fa fa-times text-primary" aria-hidden="true"></span><span class="sr-only">Close</span>
+            </a>
+            <h4 class="modal-title"><span class="fa fa-users"></span> Your Login Profiles</h4>
+        </div>
+
+        <div class="modal-body">
+
+            <div class="container-fluid">
+                <div class="row">
+                    <!-- Accounts -->
+                    <% include include/profiles%>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+
+<!-- javascript -->
+<% include include/scripts %>
+
+</body>
+</html>

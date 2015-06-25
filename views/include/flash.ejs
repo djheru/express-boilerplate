@@ -1,0 +1,23 @@
+<!-- show any messages that come back with authentication -->
+<% if (locals.flashMessages) { %>
+    <% if (locals.flashMessages.successMessage && locals.flashMessages.successMessage.length > 0) { %>
+        <div class="alert alert-success">
+            <%- locals.flashMessages.successMessage %>
+        </div>
+    <% } %>
+    <% if (locals.flashMessages.infoMessage && locals.flashMessages.infoMessage.length > 0) { %>
+        <div class="alert alert-info">
+            <%- locals.flashMessages.infoMessage %>
+        </div>
+    <% } %>
+    <% if (locals.flashMessages.warningMessage && locals.flashMessages.warningMessage.length > 0) { %>
+        <div class="alert alert-warning">
+            <%- locals.flashMessages.warningMessage %>
+        </div>
+    <% } %>
+    <% if (locals.flashMessages.dangerMessage && locals.flashMessages.dangerMessage.length > 0) { %>
+        <div class="alert alert-danger">
+            <%- locals.flashMessages.dangerMessage %>
+        </div>
+    <% } %>
+<% } %>

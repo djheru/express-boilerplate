@@ -1,0 +1,19 @@
+<nav class="navbar navbar-default">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-responsive-collapse">
+                <span class="fa fa-navicon"></span>
+            </button>
+            <a class="navbar-brand" href="/">
+                <span class="fa fa-bar-chart-o"></span> Express-Boilerplate
+            </a>
+        </div>
+        <div class="navbar-collapse collapse navbar-responsive-collapse">
+            <% if (locals.user) { %>
+                <% include nav_protected %>
+            <% } else { %>
+                <% include nav_public %>
+            <% } %>
+        </div>
+    </div>
+</nav>

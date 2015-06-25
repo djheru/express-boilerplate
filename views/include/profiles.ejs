@@ -1,0 +1,95 @@
+<div class="row">
+
+    <!-- LOCAL INFORMATION -->
+    <div class="col-sm-12">
+        <div class="well profile-sm">
+            <h4><span class="fa fa-user"></span> Local Login</h4>
+
+            <% if (locals.user && locals.user.local.email) { %>
+            <p>
+                <strong>email</strong>: <%= locals.user.local.email %>
+            </p>
+            <% } else { %>
+            <a href="/profile/link" class="btn btn-default">Create Local Login</a>
+            <% } %>
+
+        </div>
+    </div>
+
+    <!-- FACEBOOK INFORMATION -->
+    <div class="col-sm-6">
+        <div class="well profile">
+            <h4 class="text-primary"><span class="fa fa-facebook"></span> Facebook</h4>
+
+            <!-- check if the user has this token (is the user authenticated with this social account) -->
+            <% if (locals.user && locals.user.facebook.token) { %>
+            <a href="/unlink/facebook" class="btn btn-social btn-facebook"><span class="fa fa-facebook"></span> Unlink Facebook Account</a>
+            <p class="padding-top-2">
+                <strong>email</strong>: <%= locals.user.facebook.email %><br>
+                <strong>display name</strong>: <%= locals.user.facebook.displayName %><br>
+            </p>
+            <% } else { %>
+            <a href="/link/facebook" class="btn btn-social btn-facebook"><span class="fa fa-facebook"></span> Create Facebook Login</a>
+            <% } %>
+
+        </div>
+    </div>
+
+    <!-- TWITTER INFORMATION -->
+    <div class="col-sm-6">
+        <div class="well profile">
+            <h4 class="text-info"><span class="fa fa-twitter"></span> Twitter</h4>
+
+            <!-- check if the user has this token (is the user authenticated with this social account) -->
+            <% if (locals.user && locals.user.twitter.token) { %>
+            <a href="/unlink/twitter" class="btn btn-social btn-twitter"><span class="fa fa-twitter"></span> Unlink Twitter Account</a>
+            <p class="padding-top-2">
+                <strong>display name</strong>: <%= locals.user.twitter.displayName %><br>
+                <strong>username</strong>: <%= locals.user.twitter.username %>
+            </p>
+            <% } else { %>
+            <a href="/link/twitter" class="btn btn-social btn-twitter"><span class="fa fa-twitter"></span> Create Twitter Login</a>
+            <% } %>
+
+        </div>
+    </div>
+
+    <!-- GOOGLE INFORMATION -->
+    <div class="col-sm-6">
+        <div class="well profile">
+            <h4 class="text-danger"><span class="fa fa-google-plus"></span> Google+</h4>
+
+            <!-- check if the user has this token (is the user authenticated with this social account) -->
+            <% if (locals.user && locals.user.google.token) { %>
+            <a href="/unlink/google" class="btn btn-social btn-google-plus"><span class="fa fa-google-plus"></span> Unlink Google Account</a>
+            <p class="padding-top-2">
+                <strong>email</strong>: <%= locals.user.google.email %><br>
+                <strong>display name</strong>: <%= locals.user.google.displayName %>
+            </p>
+            <% } else { %>
+            <a href="/link/google" class="btn btn-social btn-google-plus"><span class="fa fa-google-plus"></span> Create Google Login</a>
+            <% } %>
+
+        </div>
+    </div>
+
+    <!-- GITHUB INFORMATION -->
+    <div class="col-sm-6">
+        <div class="well profile">
+            <h4 class="text-primary"><span class="fa fa-github-alt"></span> Github</h4>
+
+            <!-- check if the user has this token (is the user authenticated with this account) -->
+            <% if (locals.user && locals.user.github.token) { %>
+            <a href="/unlink/github" class="btn btn-social btn-github"><span class="fa fa-github"></span> Unlink Github Account</a>
+            <p class="padding-top-2">
+                <strong>email</strong>: <%= locals.user.github.email %><br>
+                <strong>display name</strong>: <%= locals.user.github.displayName %>
+            </p>
+            <% } else { %>
+            <a href="/link/github" class="btn btn-social btn-github"><span class="fa fa-github"></span> Create Github Account</a>
+            <% } %>
+
+        </div>
+    </div>
+
+</div>

@@ -1,0 +1,147 @@
+body {
+    background: url('../img/first_aid_kit.png');
+}
+
+.container {
+    background-color: #fafafa;
+    padding: 20px 20px;
+    margin-top: 20px;
+    margin-bottom: 25px;
+    border-radius: 14px;
+}
+
+span.fa-navicon {
+    color: #ffffff;
+}
+
+.well, .jumbotron {
+    word-wrap: break-word;
+    background-color: #F2F2F2;
+}
+
+.well.profile {
+    height: 190px;
+}
+
+.well.profile-sm {
+    padding-bottom: 10px;
+}
+
+.jumbotron {
+    margin-bottom: 0;
+}
+
+.padding-top-1 {
+    padding-top: 10px !important;
+}
+.padding-top-2 {
+    padding-top: 20px !important;
+}
+.padding-top-3 {
+    padding-top: 40px !important;
+}
+.padding-top-4 {
+    padding-top: 80px !important;
+}
+
+.padding-btm-1 {
+    padding-bottom: 10px !important;
+}
+
+.padding-btm-2 {
+    padding-bottom: 20px !important;
+}
+
+.margin-btm-1 {
+    margin-bottom: 10px !important;
+}
+
+.margin-btm-2 {
+    margin-bottom: 20px !important;
+}
+
+.margin-btm-3 {
+    margin-bottom: 30px !important;
+}
+
+.margin-btm-4 {
+    margin-bottom: 40px !important;
+}
+
+.margin-top-1 {
+    margin-top: 10px !important;
+}
+
+.margin-top-2 {
+    margin-top: 20px !important;
+}
+
+.margin-top-3 {
+    margin-top: 30px !important;
+}
+
+.margin-top-4 {
+    margin-top: 40px !important;
+}
+
+.isotope-item {
+    float: left;
+    height: 200px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+#thumb-container {
+    max-width: 1200px;
+}
+
+.multiselect-container {
+    font-size: 80%;
+}
+
+.modal-body h1 {
+    margin-top: 0;
+}
+
+h3.panel-title  small {
+    color: #2c3e50;
+    font-weight: bold;
+}
+
+h4.panel-title {
+    margin-top: 2px;
+    margin-bottom: 4px;
+}
+
+section#items .panel-body {
+    padding: 2px 12px;
+}
+
+.isotope-item .panel-footer {
+    padding: 4px;
+}
+input.multiselect-search {
+    font-size: .9em;
+}
+
+.multiselect-container label.radio {
+    padding-left: 6px;
+}
+
+.multiselect-container li{
+    padding-left: 4px;
+}
+
+
+.isotope-item .panel-account {
+    border-radius: 6px;
+    border: 1px solid #cfcfd2;
+    margin-bottom: 30px;
+}
+.panel-account > .panel-heading {
+    background: url('../img/first_aid_kit.png');
+}
+.panel-account > .panel-footer {
+    background: url('../img/first_aid_kit.png');
+}
+
